@@ -1,0 +1,27 @@
+{
+    "name": "rezzza/doctrine-schema-multi-mapping",
+    "type": "doctrine",
+    "description": "Allow to use doctrine schema commands when multi mapping defined.",
+    "keywords": ["doctrine", "mapping", "test"],
+    "license": "MIT",
+    "homepage": "https://github.com/rezzza/doctrine-schema-multi-mapping",
+    "authors": [{
+        "name": "Contributors",
+        "homepage": "https://github.com/rezzza/doctrine-schema-multi-mapping/contributors"
+    }],
+    "require": {
+        "php": ">=5.3.3",
+        "doctrine/orm": "~2.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Rezzza\\DoctrineSchema\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    }
+}
