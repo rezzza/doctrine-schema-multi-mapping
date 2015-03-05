@@ -14,9 +14,15 @@ Activate the bundle in `AppKernel`:
 
 # Usage
 
+```
+./app/console rezzza:doctrine-multi-mapping:schema:create --em=default  --env=test
+./app/console rezzza:doctrine-multi-mapping:schema:update --em=default  --env=test
+./app/console rezzza:doctrine-multi-mapping:schema:drop --em=default  --env=test
+```
+
 **You should consider this bundle has not to be used in a production environment**.
 
-## Why are we use it ?
+## Why are we using it ?
 
 In Doctrine2, you cannot define many mappings for one table and use `doctrine:schema:*` commands because Schema cannot and has not to decide focal points between definitions, example:
 
