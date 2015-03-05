@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <services>
+        <service id="rezzza.doctrine_schema_multi_mapping.ui.console.schema_create_command" class="Rezzza\DoctrineSchemaMultiMapping\UI\Console\SchemaCreateCommand">
+            <tag name="console.command" />
+        </service>
+
+        <service id="rezzza.doctrine_schema_multi_mapping.ui.console.schema_update_command" class="Rezzza\DoctrineSchemaMultiMapping\UI\Console\SchemaUpdateCommand">
+            <tag name="console.command" />
+        </service>
+
+        <service id="rezzza.doctrine_schema_multi_mapping.ui.console.schema_drop_command" class="Rezzza\DoctrineSchemaMultiMapping\UI\Console\SchemaDropCommand">
+            <tag name="console.command" />
+        </service>
+    </services>
+</container>
