@@ -22,7 +22,7 @@ In Doctrine2, if you define multiple mappings for the same entity then `doctrine
 
 ## Example: Acme e-commerce application with many User entities
 
-We want to express a User model in different bounded contexts. The main
+We want to express a User model in different bounded contexts.
 
 ### Definition of User entity in Account bounded context
 
