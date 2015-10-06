@@ -45,15 +45,14 @@ class MetadataMerger
 
         foreach (array_intersect_key($referenceMappings, $redundancyMappings) as $key => $val) {
             // theses Mappings have to be removed since references will change.
-            unset($referenceMappings[$key]['declared'], $referenceMappings[$key]['inherited']);
-            unset($redundancyMappings[$key]['declared'], $redundancyMappings[$key]['inherited']);
+            unset($referenceMappings[$key]['declared'], $referenceMappings[$key]['inherited'], $referenceMappings[$key]['originalClass']);
+            unset($redundancyMappings[$key]['declared'], $redundancyMappings[$key]['inherited'], $redundancyMappings[$key]['originalClass']);
 
             if ($referenceMappings[$key] != $redundancyMappings[$key]) {
                 throw new Exception\LogicException(sprintf('Field mapping "%s" changed on table "%s"', $key, $redundancy->getTableName()));
             }
         }
     }
-
 
     private function guardFieldNamesConsistency(ClassMetadata $reference, ClassMetadata $redundancy)
     {
